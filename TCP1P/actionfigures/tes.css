@@ -1,0 +1,6 @@
+@font-face {
+    font-family: 'test';
+    src: url('http://localhost:1337/test.php');
+    font-weight: 'normal';
+    font-style: 'normal';
+}
